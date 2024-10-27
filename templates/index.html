@@ -1,0 +1,104 @@
+{% extends "zola-grayscale/templates/index.html" %}
+{% block about %}
+<!-- About -->
+<section class="about-section text-center" id="{% block about_id %}about{% endblock about_id %}">
+    <div class="container px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="col-lg-8">
+                <h2 class="text-white mb-4">{% block about_title %}Expert AWS Cloud Professional Services{% endblock about_title %}</h2>
+                <p class="text-white-50">
+                    {% block about_description %}
+			Founded by an engineer that has been building full-time in AWS since 2014, Cloudcast offers services for secure cloud architecture design+implementation, on-prem application migration, and cloud optimization. 
+                    {% endblock about_description %}
+                </p>
+            </div>
+        </div>
+        {% block about_image %}
+        <img class="img-fluid" src="{{ get_url(path="assets/img/ipad.png") }}" alt="..." />
+        {% endblock about_image %}
+    </div>
+</section>
+{% endblock about %}
+{% block projects %}
+<!-- Projects-->
+<section class="projects-section bg-light" id="{% block projects_id %}projects{% endblock projects_id %}">
+    <div class="container px-4 px-lg-5">
+        {% block feature_project %}
+        <!-- Featured Project Row -->
+        <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
+            <div class="col-xl-8 col-lg-7">
+                {% block feature_project_thumbnail %}
+                <img class="img-fluid mb-3 mb-lg-0" src="{{ get_url(path="assets/img/bg-masthead.jpg") }}" alt="...">
+                {% endblock feature_project_thumbnail %}
+            </div>
+            <div class="col-xl-4 col-lg-5">
+                {% block feature_project_content %}
+                <div class="featured-text text-center text-lg-left">
+                    <h4>{% block feature_project_title %}Shoreline{% endblock feature_project_title %}</h4>
+                    <p class="text-black-50 mb-0">
+                    {% block feature_project_description %}
+                    {{ config.title }} is open source and MIT licensed. This means you can use it for any project
+                    - even commercial projects! Download it, customize it, and publish your website!
+                    {% endblock feature_project_description %}
+                    </p>
+                </div>
+                {% endblock feature_project_content %}
+            </div>
+        </div>
+        {% endblock feature_project %}
+        {% block project_1 %}
+        <!-- Project One Row -->
+        <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
+            <div class="col-lg-6">
+                {% block project_1_thumbnail %}
+                <img class="img-fluid" src="{{ get_url(path="assets/img/demo-image-01.jpg") }}" alt="...">
+                {% endblock project_1_thumbnail %}
+            </div>
+            <div class="col-lg-6">
+                {% block project_1_content %}
+                <div class="bg-black text-center h-100 project">
+                    <div class="d-flex h-100">
+                        <div class="project-text w-100 my-auto text-center text-lg-left">
+                            <h4 class="text-white">{% block project_1_title %}Misty{% endblock project_1_title %}</h4>
+                            <p class="mb-0 text-white-50">
+                            {% block project_1_description %}
+                            An example of where you can put an image of a project, or anything else, along with a description.
+                            {% endblock project_1_description %}
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                {% endblock project_1_content %}
+            </div>
+        </div>
+        {% endblock project_1 %}
+        {% block project_2 %}
+        <!-- Project Two Row -->
+        <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
+            <div class="col-lg-6">
+                {% block project_2_thumbnail %}
+                <img class="img-fluid" src="{{ get_url(path="assets/img/demo-image-02.jpg") }}" alt="...">
+                {% endblock project_2_thumbnail %}
+            </div>
+            <div class="col-lg-6 order-lg-first">
+                {% block project_2_content %}
+                <div class="bg-black text-center h-100 project">
+                    <div class="d-flex h-100">
+                        <div class="project-text w-100 my-auto text-center text-lg-right">
+                            <h4 class="text-white">{% block project_2_title %}Mountains{% endblock project_2_title %}</h4>
+                            <p class="mb-0 text-white-50">
+                            {% block project_2_description %}
+                            Another example of a project with its respective description. These sections work well responsively as well!
+                            {% endblock project_2_description %}
+                        </div>
+                    </div>
+                </div>
+                {% endblock project_2_content %}
+            </div>
+        </div>
+        {% endblock project_2 %}
+        {% block extra_projects %}{% endblock extra_projects %}
+    </div>
+</section>
+{% endblock projects %}
+
