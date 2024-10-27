@@ -34,11 +34,14 @@
             <div class="col-xl-4 col-lg-5">
                 {% block feature_project_content %}
                 <div class="featured-text text-center text-lg-left">
-                    <h4>{% block feature_project_title %}Shoreline{% endblock feature_project_title %}</h4>
+                    <h4>{% block feature_project_title %}Cloud native platform development{% endblock feature_project_title %}</h4>
                     <p class="text-black-50 mb-0">
                     {% block feature_project_description %}
-                    {{ config.title }} is open source and MIT licensed. This means you can use it for any project
-                    - even commercial projects! Download it, customize it, and publish your website!
+	            <ul class="text-black-50">
+                       <li>Secure, scalable cloud-native application platforms backed by infrastructure as code</li>
+                       <li>Continuous integration and continuous delivery pipelines</li>
+                       <li>Identity and access management</li> 
+	            </ul>
                     {% endblock feature_project_description %}
                     </p>
                 </div>
@@ -101,4 +104,40 @@
     </div>
 </section>
 {% endblock projects %}
+
+{% block signup %}
+<!-- Signup -->
+<section class="signup-section" id="{% block signup_id%}signup{% endblock signup_id %}">
+</section>
+{% endblock signup %}
+{% block contact %}
+<!-- Contact -->
+<section class="contact-section bg-black" id="{% block contact_id %}contact{% endblock contact_id %}">
+    <div class="container px-4 px-lg-5">
+        {% block contact_contact %}
+        <div class="row gx-4 gx-lg-5">
+        {% for item in contact.contact %}
+        <div class="col-md-4 mb-3 mb-md-0">
+            <div class="card py-4 h-100">
+                <div class="card-body text-center">
+                    <i class="fas {{ item.icon }} text-primary mb-2"></i>
+                    <h4 class="text-uppercase m-0">{{ item.name }}</h4>
+                    <hr class="my-4 mx-auto" />
+                    <div class="small text-black-50">{{ item.address|safe }}</div>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+        </div>
+        {% endblock contact_contact %}
+        {% block contact_social %}
+        <div class="social d-flex justify-content-center">
+            {% for item in contact.social %}
+            <a class="mx-2" href="{{ item.url | safe }}"><i class="fab {{ item.icon }}" aria-hidden="true"></i></a>
+            {% endfor %}
+        </div>
+        {% endblock contact_social %}
+    </div>
+</section>
+{% endblock contact %}
 
