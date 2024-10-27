@@ -33,7 +33,7 @@
             </div>
             <div class="col-xl-4 col-lg-5">
                 {% block feature_project_content %}
-                <div class="featured-text text-center text-lg-left">
+                <div class="featured-text text-left text-lg-left">
                     <h4>{% block feature_project_title %}Cloud native platform development{% endblock feature_project_title %}</h4>
                     <p class="text-black-50 mb-0">
                     {% block feature_project_description %}
@@ -59,13 +59,18 @@
             </div>
             <div class="col-lg-6">
                 {% block project_1_content %}
-                <div class="bg-black text-center h-100 project">
+                <div class="bg-black text-left h-100 project">
                     <div class="d-flex h-100">
-                        <div class="project-text w-100 my-auto text-center text-lg-left">
-                            <h4 class="text-white">{% block project_1_title %}Misty{% endblock project_1_title %}</h4>
+                        <div class="project-text w-100 my-auto text-left text-lg-left">
+                            <h4 class="text-white">{% block project_1_title %}Cloud strategy and migration{% endblock project_1_title %}</h4>
                             <p class="mb-0 text-white-50">
                             {% block project_1_description %}
-                            An example of where you can put an image of a project, or anything else, along with a description.
+				<ul class="text-white-50">
+                 		    <li>IT architecture modernization and cloud migration planning</li>
+                                    <li>Cloud architecture design and implementation</li>
+                                    <li>Enterprise hybrid networking</li>
+                                    <li>Monitoring, logging, performance tuning</li>
+		                </ul>
                             {% endblock project_1_description %}
                             </p>
                         </div>
@@ -85,13 +90,17 @@
             </div>
             <div class="col-lg-6 order-lg-first">
                 {% block project_2_content %}
-                <div class="bg-black text-center h-100 project">
+                <div class="bg-black text-left h-100 project">
                     <div class="d-flex h-100">
-                        <div class="project-text w-100 my-auto text-center text-lg-right">
-                            <h4 class="text-white">{% block project_2_title %}Mountains{% endblock project_2_title %}</h4>
+                        <div class="project-text w-100 my-auto text-left text-lg-right">
+                            <h4 class="text-white">{% block project_2_title %}Cloud optimization{% endblock project_2_title %}</h4>
                             <p class="mb-0 text-white-50">
                             {% block project_2_description %}
-                            Another example of a project with its respective description. These sections work well responsively as well!
+				<ul class="text-white-50">
+                 	            <li>Workload assessments utilizing the AWS Well-Architected Framework</li>
+                                    <li>Cloud cost optimization and FinOps</li>
+                                    <li>Engineering services to help apps efficiently scale in all directions</li>
+		                </ul>
                             {% endblock project_2_description %}
                         </div>
                     </div>
