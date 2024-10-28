@@ -7,9 +7,9 @@ name = "Email"
 address = """<a href="#!">hello@cloudcast.consulting</a>"""
 icon = "fa-envelope"
 [[contact]]
-name = "Phone"
-address = "+1 (555) 902-8832"
-icon = "fa-mobile-alt"
+name = "Email "
+address = """<a href="#!">hello@cloudcast.consulting</a>"""
+icon = "fa-paper-plane-top"
 [[social]]
 icon = "fa-mastodon"
 url = "#!"
@@ -18,4 +18,4 @@ icon = "fa-aws"
 url = "#!"
 [[social]]
 icon = "fa-github"
-url = "https://github.com/mattimustang/zola-grayscale"
+url = "https://github.com/r6t/cloudcast-dot-consulting"
