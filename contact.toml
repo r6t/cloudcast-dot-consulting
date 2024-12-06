@@ -1,21 +1,18 @@
 [[contact]]
-name = "Address"
-address = "1430 2nd Ave. Seattle, WA 98109"
-icon = "fa-map-marked-alt"
+name = "Mail"
+address = "415 1st Ave N, Unit 19472<br>Seattle, WA 98109"
+icon = "fa-building-o"
 [[contact]]
 name = "Email"
-address = """<a href="#!">hello@cloudcast.consulting</a>"""
-icon = "fa-envelope"
-[[contact]]
-name = "Email "
-address = """<a href="#!">hello@cloudcast.consulting</a>"""
 icon = "fa-paper-plane-top"
-[[social]]
-icon = "fa-mastodon"
-url = "#!"
-[[social]]
+content = """
+<a href="mailto:hello@cloudcast.consulting">hello@cloudcast.consulting</a>
+<br><br>
+<a href="publickey.hello.asc">PGP Public Key</a>
+"""
+[[contact]]
+name = "AWS IQ"
 icon = "fa-aws"
-url = "#!"
-[[social]]
-icon = "fa-github"
-url = "https://github.com/r6t/cloudcast-dot-consulting"
+content = """
+Work with Cloudcast from inside your AWS account on AWS IQ.
+"""
