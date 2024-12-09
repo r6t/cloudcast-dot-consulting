@@ -1,3 +1,0 @@
-[submodule "amazon-cloudfront-secure-static-site"]
-	path = amazon-cloudfront-secure-static-site
-	url = https://github.com/aws-samples/amazon-cloudfront-secure-static-site.git
