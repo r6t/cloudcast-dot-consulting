@@ -1,10 +1,11 @@
 {% extends "zola-grayscale/templates/index.html" %}
+
 {% block navigation %}
 <!-- Navigation -->
 <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
     <div class="container px-4 px-lg-5">
         <a class="navbar-brand" href="{{ get_url(path="/") }}#page-top">
-            <img src="{{ get_url(path='img/cloudcast-1-black.png') }}" alt="Cloudcast Logo" style="height: 30px; margin-right: 10px;">
+            <img src="{{ get_url(path='img/cloudcast-1-clearsel40.png') }}" alt="Logo" style="width: 30px; margin-right: 10px;">
             {% block nav_home_title %}{{ config.title }}{% endblock nav_home_title %}
         </a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -24,13 +25,11 @@
 </nav>
 {% endblock navigation %}
 
-<!-- Test masthead to get logo displayed above title -->
 {% block masthead %}
 <header class="masthead">
     <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
         <div class="d-flex justify-content-center">
             <div class="text-center">
-                <img src="{{ get_url(path='img/cloudcast-1-black.png') }}" alt="Cloudcast Logo" style="height: 60px; margin-bottom: 20px;">
                 <h1 class="mx-auto my-0 text-uppercase">{{ config.title }}</h1>
                 <h2 class="text-white-50 mx-auto mt-2 mb-5">{{ config.description }}</h2>
                 <a class="btn btn-primary" href="#about">Get Started</a>
@@ -41,7 +40,6 @@
 {% endblock masthead %}
 
 {% block about %}
-<!-- About -->
 <section class="about-section text-center" id="{% block about_id %}about{% endblock about_id %}">
     <div class="container px-4 px-lg-5">
         <div class="row gx-4 gx-lg-5 justify-content-center">
