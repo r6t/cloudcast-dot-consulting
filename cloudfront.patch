@@ -9,7 +9,13 @@ index 3ea3c9a..4d6bb43 100644
 +  CloudFrontFunction:
 +    Type: AWS::CloudFront::Function
 +    Properties:
-+      Name: !Sub "${SubDomain}-${DomainName}-CDN-URLRewriter"
++    Name: !Join
++      - '-'
++      - - !Ref SubDomain
++        - !Join
++          - '-'
++          - !Split ['.', !Ref DomainName]
++        - 'CDN-URLRewriter'
 +      FunctionConfig:
 +        Comment: "Rewrite URLs to append /index.html"
 +        Runtime: "cloudfront-js-1.0"
