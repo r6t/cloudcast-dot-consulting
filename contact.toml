@@ -1,18 +1,18 @@
 [[contact]]
 name = "Mail"
 address = "415 1st Ave N, Unit 19472<br>Seattle, WA 98109"
-icon = "fa-building-o"
+icon = "fas fa-building"
 [[contact]]
 name = "Email"
-icon = "fa-paper-plane-top"
+icon = "fas fa-paper-plane"
 content = """
 <a href="mailto:hello@cloudcast.consulting">hello@cloudcast.consulting</a>
-<br><br>
+<br>
 <a href="publickey.hello.asc">PGP Public Key</a>
 """
 [[contact]]
-name = "AWS IQ"
-icon = "fa-aws"
+name = "AWS Certified"
+icon = "fas fa-circle-check"
 content = """
-Work with Cloudcast from inside your AWS account on AWS IQ.
+Verify AWS Certifications on <a href="https://www.credly.com/users/ryan-cast">Credly</a>
 """
